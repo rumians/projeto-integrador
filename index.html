@@ -1,0 +1,604 @@
+<meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portugues</title>
+  <link rel="icon" href="midia/livros.png">
+  <script src="menu.js"></script>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+  * {
+    padding: 0;
+    margin: 0;
+    color: #000;
+  }
+
+  html {
+
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  #pagina {
+    height: 375%;
+    width: 100%;
+  }
+
+  #cabeçalho {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to left, rgb(12, 138, 65), #0c60af, #03356bef, #011430, rgb(14, 1, 26));
+    background-size: 300% 100%;
+    animation: degrade 5s infinite alternate;
+  }
+
+  @keyframes degrade {
+    0% {
+      background-position-x: 0%;
+    }
+
+    100% {
+      background-position-x: 100%;
+    }
+  }
+
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #menuzin {
+    width: 100%;
+    padding: 20px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    z-index: 1;
+  }
+
+  #menuzin.rolagem {
+    background-color: #ffffff;
+    color: #fff;
+  }
+
+  #menuzin ul {
+    list-style-type: none;
+  }
+
+  #menuzin ul li {
+    display: inline-block;
+    margin: 0 40px;
+  }
+
+  #menuzin ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  #menuzin.rolagem a {
+    color: #FE775A;
+  }
+
+  #conteudo {
+    height: 2000px;
+    padding-top: 60px;
+  }
+
+  #titulo {
+    position: absolute;
+    left: 5%;
+    top: 25%;
+    color: white;
+    font-size: 6rem;
+
+  }
+
+  #introduçao {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    color: white;
+    height: 10%;
+    width: 40%;
+    text-align: justify;
+    font-weight: lighter;
+  }
+
+  #escola {
+    position: absolute;
+    width: 40%;
+    height: 70%;
+    right: 9%;
+    top: 20%;
+  }
+
+  #parte {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 80%;
+    background-color: #FFC300
+  }
+
+  #imagem1 {
+    position: absolute;
+    width: 40%;
+    height: 90%;
+    left: 0;
+    bottom: 5%;
+  }
+
+  #titulo2 {
+    position: absolute;
+    left: 40%;
+    bottom: 80%;
+    font-size: 4rem;
+    width: 60%;
+    height: 10%;
+    font-weight: lighter;
+    color: white;
+  }
+
+  #texto2 {
+    position: absolute;
+    left: 40%;
+    bottom: 30%;
+    font-weight: lighter;
+    color: white;
+    text-align: justify;
+    margin-right: 9%;
+  }
+
+  #conteudo {
+    position: absolute;
+    min-height: 200%;
+    width: 100%;
+    background-color: #00095a;
+    top: 180%;
+    color: white;
+  }
+
+  #titulo3 {
+    position: absolute;
+    left: 35%;
+    top: 3%;
+    font-weight: lighter;
+    font-size: 4rem;
+    color: #fff;
+
+  }
+
+  #ConceitosdeLínguaeLinguagem {
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    width: 20%;
+    height: 30%;
+    left: 9%;
+    top: 15%;
+    border-radius: 20px;
+
+  }
+
+  #ConceitosdeLínguaeLinguagem:hover {
+    background-color: rgb(54, 63, 143);
+    transition: 0.2s;
+  }
+
+  #figurasdelinguagem {
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    width: 20%;
+    height: 30%;
+    left: 39.5%;
+    top: 15%;
+    border-radius: 20px;
+  }
+
+  #figurasdelinguagem:hover {
+    background-color: rgb(54, 63, 143);
+    transition: 0.2s;
+  }
+
+  #Sintaxe {
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    width: 20%;
+    height: 30%;
+    left: 70%;
+    top: 15%;
+    border-radius: 20px;
+  }
+
+  #Sintaxe:hover {
+    background-color: rgb(54, 63, 143);
+    transition: 0.2s;
+  }
+
+  #TextoLiterárioenãoLiterário {
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    width: 20%;
+    height: 30%;
+    left: 9%;
+    top: 46%;
+    border-radius: 20px;
+  }
+
+  #TextoLiterárioenãoLiterário:hover {
+    background-color: rgb(54, 63, 143);
+    transition: 0.2s;
+  }
+
+  #VariaçãoLinguística {
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    width: 20%;
+    height: 30%;
+    left: 39.5%;
+    top: 46%;
+    border-radius: 20px;
+
+  }
+
+  #VariaçãoLinguística:hover {
+    background-color: rgb(54, 63, 143);
+    transition: 0.2s;
+  }
+
+  #Sambaqui {
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    width: 20%;
+    height: 30%;
+    left: 70%;
+    top: 46%;
+    border-radius: 20px;
+  }
+
+  #Sambaqui:hover {
+    background-color: rgb(54, 63, 143);
+    transition: 0.2s;
+  }
+
+  #imagem2 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+
+  #conceitos {
+    position: absolute;
+    left: 1%;
+    bottom: 30%;
+    font-weight: lighter;
+    color: #fff;
+  }
+
+  #figuras {
+    position: absolute;
+    left: 25%;
+    bottom: 30%;
+    font-weight: lighter;
+    color: #fff;
+  }
+
+  #imagem3 {
+    display: flex;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+
+  #sin {
+    position: absolute;
+    left: 7%;
+    bottom: 30%;
+    font-weight: lighter;
+    width: 100%;
+    color: #fff;
+  }
+
+  #imagem4 {
+    display: flex;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+
+  #imagem5 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+
+  #texto-literario {
+    position: absolute;
+    left: 10%;
+    bottom: 34%;
+    font-weight: lighter;
+    color: #fff;
+  }
+
+  #imagem6 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+
+  #variaçao {
+    position: absolute;
+    left: 25%;
+    bottom: 36%;
+    font-weight: lighter;
+    color: #fff;
+  }
+
+  #imagem7 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+
+  #Sam {
+    position: absolute;
+    left: 25%;
+    bottom: 37%;
+    font-weight: lighter;
+    color: #fff;
+  }
+
+  #criadores {
+    position: absolute;
+    height: 45%;
+    width: 100%;
+    bottom: -338%;
+    color: white;
+  }
+
+  #crias {
+    font-weight: lighter;
+    font-size: 3rem;
+  }
+
+  #crias {
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    left: 44%;
+    top: 85%;
+    color: #fff;
+  }
+
+  #Ruan {
+    position: absolute;
+    border-radius: 50%;
+    left: 21%;
+    top: 4%;
+    width: 20%;
+    height: 60%;
+    left: 20%;
+    top: -20%;
+    border-radius: 20px;
+    background-color: #00095a;
+  }
+
+  #Ruan:hover {
+    background-color: rgb(40, 39, 87);
+    transition: 0.2s;
+  }
+
+  #nome {
+    position: absolute;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    font-weight: lighter;
+    bottom: 10%;
+    color: #fff;
+  }
+
+
+  #foto {
+    height: 50%;
+    border-radius: 50%;
+  }
+
+  #Eduardo {
+    height: 50%;
+    border-radius: 50%;
+    position: absolute;
+    left: 21%;
+    top: 4%;
+    width: 20%;
+    height: 60%;
+    left: 40%;
+    top: -20%;
+    border-radius: 20px;
+    background-color: #00095a;
+  }
+
+
+  #Eduardo:hover {
+    background-color: rgb(40, 39, 87);
+    transition: 0.2s;
+  }
+
+  #nome2 {
+    position: absolute;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    font-weight: lighter;
+    bottom: 10%;
+    color: #fff;
+  }
+
+  #foto2 {
+    height: 50%;
+    border-radius: 50%;
+  }
+
+  #Henrique {
+    position: absolute;
+    width: 20%;
+    height: 60%;
+    left: 60%;
+    top: -20%;
+    border-radius: 20px;
+    background-color: #00095a;
+  }
+
+  #Henrique:hover {
+    background-color: rgb(40, 39, 87);
+
+    transition: 0.2s;
+  }
+
+  #nome3 {
+    position: absolute;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    bottom: 10%;
+    font-weight: lighter;
+    color: #fff;
+  }
+
+
+  #foto3 {
+    height: 50%;
+    border-radius: 50%;
+  }
+
+
+  header {
+    position: relative;
+    display: flex;
+    background-color: hwb(182 55% 0%);
+  }
+
+  #onda {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+  }
+
+  .usuarios-div {
+    justify-content: center;
+    display: flex;
+  }
+</style>
+
+<body>
+  <div id="pagina">
+    <div id="cabeçalho">
+      <div class="flex">
+        <div id="menuzin">
+          <ul>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-book"
+              viewBox="0 0 16 16">
+              <path
+                d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+            </svg>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li><a href="#cabeçalho">INICIO</a></li>
+            <li><a href="#parte">OBJETIVO DO PROJETO</a></li>
+            <li><a href="#conteudo">ASSUNTOS</a></li>
+            <li><a href="#criadores">CRIADORES</a></li>
+          </ul>
+        </div>
+      </div>
+      <h1 id="titulo">Olá</h1>
+      <img id="escola" src="midia/—Pngtree—2 5d stereo school model_4540896.png" alt="escola">
+      <h2 id="introduçao">Bem-vindo ao nosso site dedicado à língua portuguesa. Explore a riqueza e a beleza deste
+        idioma através de artigos, dicas de gramática, curiosidades e muito mais. Aprofunde seu conhecimento e
+        apaixone-se pelo fascinante universo da língua portuguesa!
+      </h2>
+    </div>
+    <div id="parte">
+      <img id="imagem1" src="midia/8768796 (1).jpg" alt="menina sentada lendo um livro">
+      <h1 id="titulo2">OBJETIVO DO PROJETO</h1>
+      <h2 id="texto2">Este projeto tem como objetivo abordar uma matéria específica e criar um site<br> com fins
+        acadêmicos para
+        acompanhar e analisar nossos progressos ao longo dos próximos anos. O site nos permitirá visualizar e avaliar se
+        estamos efetivamente<br> ou não, fornecendo uma visão clara de nosso desenvolvimento nessa área. Será uma
+        ferramenta
+        valiosa para avaliar nosso crescimento e identificar áreas de aprimoramento.</h2>
+    </div>
+    <div id="conteudo">
+      <h1 id="titulo3">APRENDA SOBRE</h1>
+
+      <div onclick="window.location.href=('conceitos-de-lingua-e-linguagem.html')" id="ConceitosdeLínguaeLinguagem">
+        <div>
+          <img id="imagem2" src="midia/07092708_9064_GDO.png" alt="lingua e linguagem">
+        </div>
+        <h1 id="conceitos">Conceitos de Língua e Linguagem</h1>
+      </div>
+      <div onclick="window.location.href=('figuras-de-linguagem.html')" id="figurasdelinguagem">
+        <img id="imagem3" src="midia/figuras-de-linguagem.webp" alt="">
+        <h1 id="figuras">Figuras de linguagem</h1>
+      </div>
+
+      <div onclick="window.location.href=('sintaxe-Fonética-Morfologia-Semiologia.html')" id="Sintaxe">
+        <img id="imagem4" src="midia/sintaxe-e-semantica.jpg"
+          alt="pessoa com o cerebro feito de um fio longo e embaraçado e o outro lado uma pessoa com cerebro com um fio longo em formato de espiral.">
+        <h2 id="sin">Sintaxe, Fonética,<br> Morfologia, Semiologia</h2>
+      </div>
+      <div onclick="window.location.href=('Texto-Literário-e-não-Literário.html')" id="TextoLiterárioenãoLiterário">
+        <img id="imagem5" src="midia/texto-literario.webp" alt="varias pessoas voando em cima de livors magicos">
+        <h1 id="texto-literario">Texto Literário e não Literário</h1>
+      </div>
+      <div onclick="window.location.href=('Variação-Linguística.html')" id="VariaçãoLinguística">
+        <img id="imagem6" src="midia/variaçao-linguistica.png"
+          alt="silhueta de pessoas dando exemplos de variaçao linguistica (guri, oxente, uai)">
+        <h1 id="variaçao">Variação Linguística</h1>
+      </div>
+      <div onclick="window.location.href=('sambaqui.html')" id="Sambaqui">
+        <img id="imagem7" src="midia/sambaqui_1.jpg" alt="Sambaqui">
+        <h1 id="Sam">Sambaqui</h1>
+      </div>
+      <h1 id="crias">Criadores</h1>
+    </div>
+    <div id="criadores">
+      <header>
+        <svg class="onda" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#00095a" fill-opacity="1"
+            d="M0,32L30,69.3C60,107,120,181,180,186.7C240,192,300,128,360,128C420,128,480,192,540,197.3C600,203,660,149,720,138.7C780,128,840,160,900,186.7C960,213,1020,235,1080,213.3C1140,192,1200,128,1260,106.7C1320,85,1380,107,1410,117.3L1440,128L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z">
+          </path>
+        </svg>
+        <div class="usuarios-div" onclick="window.open('https://github.com/rumians')" id="Ruan">
+          <h1 id="nome">
+            Ruan Miguel
+          </h1>
+          <img id="foto" src="midia/foto.png" alt="foto de perfil">
+        </div>
+        <div class="usuarios-div" onclick="window.open('https://github.com/GoodSir6')" id="Eduardo">
+          <h1 id="nome2">Eduardo</h1>
+          <img id="foto2" src="midia/foto.png" alt="foto de perfil">
+        </div>
+        <div class="usuarios-div" onclick="window.open('https://github.com/Henrique0330')" id="Henrique">
+          <h1 id="nome3">Henrique Dias</h1>
+          <img id="foto3" src="midia/foto.png" alt="foto de perfil ">
+        </div>
+      </header>
+    </div>
+  </div>
+</body>
+
+</html>
