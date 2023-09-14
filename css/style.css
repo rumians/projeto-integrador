@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+  * {
+    padding: 0;
+    margin: 0;
+    color: #000;
+  }
+
+  html {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  header {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to left, rgb(12, 138, 65), #0c60af, #03356bef, #011430, rgb(14, 1, 26));
+    background-size: 300% 100%;
+    animation: degrade 5s infinite alternate;
+  }
+
+  @keyframes degrade {
+    0% {
+      background-position-x: 0%;
+    }
+
+    100% {
+      background-position-x: 100%;
+    }
+  }
+
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #menuzin {
+    width: 100%;
+    padding: 20px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    z-index: 1;
+  }
+
+  #menuzin.rolagem {
+    background-color: #ffffff;
+    color: #fff;
+  }
+
+  #menuzin ul {
+    list-style-type: none;
+  }
+
+  #menuzin ul li {
+    display: inline-block;
+    margin: 0 40px;
+  }
+
+  #menuzin ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  #menuzin.rolagem a {
+    color: #FE775A;
+  }
+
+  #conteudo {
+    height: 2000px;
+    padding-top: 60px;
+  }
+
+  #titulo {
+    position: absolute;
+    left: 5%;
+    top: 25%;
+    color: white;
+    font-size: 6rem;
+
+  }
+
+  #introduçao {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    color: white;
+    height: 10%;
+    width: 40%;
+    text-align: justify;
+    font-weight: lighter;
+  }
+
+  #escola {
+    position: absolute;
+    width: 40%;
+    height: 70%;
+    right: 9%;
+    top: 20%;
+  }
+
+  #parte {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 80%;
+    background-color: #FFC300
+  }
+
+  #imagem1 {
+    position: absolute;
+    width: 40%;
+    height: 90%;
+    left: 0;
+    bottom: 5%;
+  }
+
+  #titulo2 {
+    position: absolute;
+    left: 40%;
+    bottom: 80%;
+    font-size: 4rem;
+    width: 60%;
+    height: 10%;
+    font-weight: lighter;
+    color: white;
+  }
+
+  #texto2 {
+    position: absolute;
+    left: 40%;
+    bottom: 30%;
+    font-weight: lighter;
+    color: white;
+    text-align: justify;
+    margin-right: 9%;
+  }
+
+  #conteudo {
+    position: absolute;
+    height: 1700px;
+    width: 100%;
+    background-color: #00095a;
+    color: white;
+  }
+
+  #titulo3 {
+    position: absolute;
+    left: 35%;
+    top: 3%;
+    font-weight: lighter;
+    font-size: 4rem;
+    color: #fff;
+
+  }
+
+  #ConceitosdeLínguaeLinguagem {
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    width: 20%;
+    height: 30%;
+    left: 9%;
+    top: 15%;
+    border-radius: 20px;
+
+  }
+
+  #ConceitosdeLínguaeLinguagem:hover {
+    background-color: rgb(54, 63, 143);
+    transition: 0.2s;
+  }
+
+  #figurasdelinguagem {
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    width: 20%;
+    height: 30%;
+    left: 39.5%;
+    top: 15%;
+    border-radius: 20px;
+  }
+
+  #figurasdelinguagem:hover {
+    background-color: rgb(54, 63, 143);
+    transition: 0.2s;
+  }
+
+  #Sintaxe {
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    width: 20%;
+    height: 30%;
+    left: 70%;
+    top: 15%;
+    border-radius: 20px;
+  }
+
+  #Sintaxe:hover {
+    background-color: rgb(54, 63, 143);
+    transition: 0.2s;
+  }
+
+  #TextoLiterárioenãoLiterário {
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    width: 20%;
+    height: 30%;
+    left: 9%;
+    top: 46%;
+    border-radius: 20px;
+  }
+
+  #TextoLiterárioenãoLiterário:hover {
+    background-color: rgb(54, 63, 143);
+    transition: 0.2s;
+  }
+
+  #VariaçãoLinguística {
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    width: 20%;
+    height: 30%;
+    left: 39.5%;
+    top: 46%;
+    border-radius: 20px;
+
+  }
+
+  #VariaçãoLinguística:hover {
+    background-color: rgb(54, 63, 143);
+    transition: 0.2s;
+  }
+
+  #Sambaqui {
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    width: 20%;
+    height: 30%;
+    left: 70%;
+    top: 46%;
+    border-radius: 20px;
+  }
+
+  #Sambaqui:hover {
+    background-color: rgb(54, 63, 143);
+    transition: 0.2s;
+  }
+
+  #imagem2 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+
+  #conceitos {
+    position: absolute;
+    left: 1%;
+    bottom: 30%;
+    font-weight: lighter;
+    color: #fff;
+  }
+
+  #figuras {
+    position: absolute;
+    left: 25%;
+    bottom: 30%;
+    font-weight: lighter;
+    color: #fff;
+  }
+
+  #imagem3 {
+    display: flex;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+
+  #sin {
+    position: absolute;
+    left: 7%;
+    bottom: 30%;
+    font-weight: lighter;
+    width: 100%;
+    color: #fff;
+  }
+
+  #imagem4 {
+    display: flex;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+
+  #imagem5 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+
+  #texto-literario {
+    position: absolute;
+    left: 10%;
+    bottom: 34%;
+    font-weight: lighter;
+    color: #fff;
+  }
+
+  #imagem6 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+
+  #variaçao {
+    position: absolute;
+    left: 25%;
+    bottom: 36%;
+    font-weight: lighter;
+    color: #fff;
+  }
+
+  #imagem7 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+
+  #Sam {
+    position: absolute;
+    left: 25%;
+    bottom: 37%;
+    font-weight: lighter;
+    color: #fff;
+  }
+
+  footer {
+    color: white;
+  }
+
+  #crias {
+    font-weight: lighter;
+    font-size: 3rem;
+  }
+
+  #crias {
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    left: 44%;
+    top: 85%;
+    color: #fff;
+  }
+
+  #Ruan {
+    position: absolute;
+    border-radius: 50%;
+    left: 21%;
+    top: 4%;
+    width: 20%;
+    height: 60%;
+    left: 20%;
+    top: -20%;
+    border-radius: 20px;
+    background-color: #00095a;
+  }
+
+  #Ruan:hover {
+    background-color: rgb(40, 39, 87);
+    transition: 0.2s;
+  }
+
+  #nome {
+    position: absolute;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    font-weight: lighter;
+    bottom: 10%;
+    color: #fff;
+  }
+
+
+  #foto {
+    height: 50%;
+    border-radius: 50%;
+  }
+
+  #Eduardo {
+    height: 50%;
+    border-radius: 50%;
+    position: absolute;
+    left: 21%;
+    top: 4%;
+    width: 20%;
+    height: 60%;
+    left: 40%;
+    top: -20%;
+    border-radius: 20px;
+    background-color: #00095a;
+  }
+
+
+  #Eduardo:hover {
+    background-color: rgb(40, 39, 87);
+    transition: 0.2s;
+  }
+
+  #nome2 {
+    position: absolute;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    font-weight: lighter;
+    bottom: 10%;
+    color: #fff;
+  }
+
+  #foto2 {
+    height: 50%;
+    border-radius: 50%;
+  }
+
+  #Henrique {
+    position: absolute;
+    width: 20%;
+    height: 60%;
+    left: 60%;
+    top: -20%;
+    border-radius: 20px;
+    background-color: #00095a;
+  }
+
+  #Henrique:hover {
+    background-color: rgb(40, 39, 87);
+
+    transition: 0.2s;
+  }
+
+  #nome3 {
+    position: absolute;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    bottom: 10%;
+    font-weight: lighter;
+    color: #fff;
+  }
+
+
+  #foto3 {
+    height: 50%;
+    border-radius: 50%;
+  }
+
+
+  footer {
+    display: flex;
+    background-color: hwb(182 55% 0%);
+  }
+
+  #onda {
+    position: absolute;
+    bottom: 0%;
+  }
+
+  .usuarios-div {
+    justify-content: center;
+    display: flex;
+  }

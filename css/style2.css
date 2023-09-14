@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#menuzin {
+    width: 100%;
+    padding: 5px 2%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    z-index: 1;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#menuzin.rolagem {
+    background-color: #FFD60A;
+    color: #000000;
+}
+
+#menuzin ul {
+    list-style-type: none;
+}
+
+#menuzin ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+#menuzin ul li a {
+    color: #dd1e1e;
+    text-decoration: none;
+}
+
+#menuzin.rolagem a {
+    color: #FE775A;
+}
+
+.h1 {
+    text-align: center;
+}
+
+#body {
+    margin-top: 3cm;
+    margin-left: 3cm;
+    margin-bottom: 5cm;
+    margin-right: 5cm;
+    font-family: 'Times New Roman', Arial, serif;
+    background-color: #ffffff
+}
+
+.p {
+    font-size: 125%;
+}
+
+#onda {
+    position: absolute;
+    bottom: -100%;
+    left: 0%;
+    right: 0%;
+}
