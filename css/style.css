@@ -8,9 +8,10 @@
 
 html {
   font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
 }
 
-header {
+#cabeçalho {
   height: 100%;
   width: 100%;
   display: flex;
@@ -39,7 +40,7 @@ header {
 
 #menuzin {
   width: 100%;
-  padding: 20px 4%;
+  padding: 20px;
   position: fixed;
   top: 0;
   left: 0;
@@ -50,14 +51,19 @@ header {
 #menuzin.rolagem {
   background-color: #ffffff;
   color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #menuzin ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   list-style-type: none;
 }
 
 #menuzin ul li {
-  display: inline-block;
   margin: 0 40px;
 }
 
@@ -315,10 +321,6 @@ header {
   color: #fff;
 }
 
-footer {
-  color: white;
-}
-
 #crias {
   font-weight: lighter;
   font-size: 3rem;
@@ -339,9 +341,22 @@ footer {
   margin: 0 auto;
 }
 
-footer {
+#rodape {
   display: flex;
-  background-color: hwb(182 55% 0%);
+  color: white;
+  background-color: #00095a;
+}
+
+.titulocriadores  {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+}
+
+.titulocriadores h1 {
+  font-size: 60px;
+  color: white;
 }
 
 .usuarios-div {
