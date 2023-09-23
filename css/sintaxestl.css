@@ -88,16 +88,12 @@ html {
 }
 
 .title {
-    font-size: 50px;
-    font-family: 'Heebo', sans-serif;
+    font-size: 5vw;
     margin-bottom: 5px;
+    text-align: center;
     text-align: center;
 }
 
-.subtitle {
-    color: var(--cor-cinza);
-    margin-bottom: 10px;
-}
 
 .autor {
     margin-bottom: 10px;
@@ -107,33 +103,39 @@ html {
     text-align: justify;
 }
 
+.subtitle {
+    font-size: 1.5vw;
+    margin-bottom: 30px;
+}
+
 .texto1 {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
+.alinharadireita {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30vw;
+}
+
 .title2 {
     margin-bottom: 30px;
+    font-size: 4vw;
+    text-align: center;
 }
 
 .title3 {
+    font-size: 3vw;
     margin-top: 20px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .imagenconteudo {
     width: 600px;
     margin-left: 4%;
     margin-top: 10px;
-}
-
-.title4 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.texto4 {
-    margin-bottom: 50px;
 }
 
 
