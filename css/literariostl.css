@@ -8,6 +8,7 @@
     margin: 0%;
     font-family: 'Quicksand', sans-serif;
     color: #000000;
+    font-size: 20px;
 }
 
 :root {
@@ -89,6 +90,7 @@ html {
     font-size: 50px;
     font-family: 'Heebo', sans-serif;
     margin-bottom: 5px;
+    text-align: center;
 }
 
 .subtitle {
@@ -133,6 +135,15 @@ html {
     margin-bottom: 50px;
 }
 
+#diana {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#souza {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 .linha-horizontal {
     border-top: 2px solid var(--cor-cinza);
