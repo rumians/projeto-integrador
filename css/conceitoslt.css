@@ -113,11 +113,7 @@ html {
     margin-bottom: 20px;
 }
 
-.texto2 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-}
+
 
 .title2 {
     margin-bottom: 30px;
@@ -218,13 +214,13 @@ html {
     margin-bottom: 20px;
 }
 
-.imagenvar1 {
+.imagemconceito1 {
     width: 100%;
     border: solid black 3px;
 }
 
-.imagenvar2 {
+.imagemconceito2 {
     width: 100%;
-    height: 40vh;
+    height: 60vh;
     border: solid black 3px;
 }
