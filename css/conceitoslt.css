@@ -156,7 +156,7 @@ html {
     margin-right: 15px;
 }
 
-.mais {
+#mais {
     display: flex;
     flex-wrap: wrap;
     margin-left: 20%;
@@ -164,19 +164,19 @@ html {
     margin-top: 20px;
 }
 
-.mais>div {
+#mais>div {
     flex: 1 1 400px;
     margin-top: 15px;
     margin-bottom: 10px;
 }
 
-.mais h1 {
+#mais h1 {
     font-family: 'Cabin', sans-serif;
     font-size: 20px;
     margin-top: 10px;
 }
 
-.mais a {
+#mais a {
     text-decoration: none;
 }
 
@@ -188,7 +188,7 @@ html {
     box-shadow: 2px 2px 3px var(--cor-terciaria);
 }
 
-.mais p {
+#mais p {
     font-family: 'Quicksand', sans-serif;
     max-width: 360px;
 }
