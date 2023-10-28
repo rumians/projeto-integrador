@@ -13,15 +13,33 @@
 </head>
 
 <body>
-  <header id="cabeçalho">
-    <nav id="menuzin">
-      <ul>
-        <li><a href="#cabeçalho">INICIO</a></li>
-        <li><a href="#parte">OBJETIVO DO PROJETO</a></li>
-        <li><a href="#conteudo">ASSUNTOS</a></li>
-        <li><a href="#rodape">CRIADORES</a></li>
-      </ul>
+  <header>
+    <nav id="nav-bar">
+      <div class="nav-list">
+        <ul>
+          <li class="nav-item"><a href="#cabeçalho">INICIO</a></li>
+          <li class="nav-item"><a href="#parte">OBJETIVO</a></li>
+          <li class="nav-item"><a href="#conteudo">ASSUNTOS</a></li>
+          <li class="nav-item"><a href="#rodape">CRIADORES</a></li>
+        </ul>
+      </div>
+      <div class="mobile-botao">
+        <button onclick="menulateral()"><img class="icon" src="midia/menu-icon-removebg-preview.png"></button>
+      </div>
     </nav>
+
+    <div class="mobile-menu">
+      <ul>
+        <li class="nav-item"><a href="#cabeçalho"></a></li>
+        <li class="nav-item"><a href="#cabeçalho">INICIO</a></li>
+        <li class="nav-item"><a href="#parte">OBJETIVO DO PROJETO</a></li>
+        <li class="nav-item"><a href="#conteudo">ASSUNTOS</a></li>
+        <li class="nav-item"><a href="#rodape">CRIADORES</a></li>
+      </ul>
+    </div>
+  </header>
+  <div id="cabeçalho">
+
     <h1 id="titulo">Olá</h1>
     <img id="escola" src="midia/—Pngtree—2 5d stereo school model_4540896.png" alt="escola" />
     <p id="introduçao">
@@ -30,22 +48,22 @@
       curiosidades e muito mais. Aprofunde seu conhecimento e apaixone-se pelo
       fascinante universo da língua portuguesa!
     </p>
-  </header>
-  <section id="parte">
-    <div id="imagensec">
-      <img id="imagem1" src="midia/8768796 (1).jpg" alt="menina sentada lendo um livro" />
-    </div>
+  </div>
+  <section class="obj">
     <div class="text">
       <h1 id="titulo2">OBJETIVO DO PROJETO</h1>
     </div>
-    <div class="text2">
+  </section>
+  <section id="parte">
+    <div id="flexparte">
+      <div id="imagensec">
+        <img id="imagem1" src="midia/8768796 (1).jpg" alt="menina sentada lendo um livro" />
+      </div>
+
       <p id="texto2">
-        Este projeto tem como objetivo abordar uma matéria específica e criar
-        um site com fins acadêmicos para acompanhar e analisar nossos
-        progressos ao longo dos próximos anos. O site nos permitirá visualizar
-        e avaliar se estamos efetivamente ou não, fornecendo uma visão clara
-        de nosso desenvolvimento nessa área. Será uma ferramenta valiosa para
-        avaliar nosso crescimento e identificar áreas de aprimoramento.
+        Este projeto tem como objetivo abordar uma matéria específica e criar um site com fins acadêmicos para
+        acompanhar e analisar nossos progressos ao longo dos próximos anos. O site nos permitirá visualizar e avaliar se
+        estamos efetivamente ou não, fornecendo uma visão clara de nosso desenvolvimento nessa área.
       </p>
     </div>
   </section>
@@ -62,12 +80,12 @@
       </li>
       <li>
         <div onclick="window.location.href=('figuras-de-linguagem.html')" id="figurasdelinguagem">
-          <img id="imagem2" src="midia/figuras-de-linguagem.webp"/>
+          <img id="imagem2" src="midia/figuras-de-linguagem.webp" />
           <h2 id="figuras">Figuras de linguagem</h2>
         </div>
       </li>
       <li>
-      <div onclick="window.location.href=('Sintaxe-Fonética-Morfologia-Semiologia.html')" id="Sintaxe">
+        <div onclick="window.location.href=('Sintaxe-Fonética-Morfologia-Semiologia.html')" id="Sintaxe">
           <img id="imagem2" src="midia/sintaxe-e-semantica.jpg"
             alt="pessoa com o cerebro feito de um fio longo e embaraçado e o outro lado uma pessoa com cerebro com um fio longo em formato de espiral." />
           <h2 id="sin">Sintaxe</h2>
@@ -96,20 +114,30 @@
   </main>
   <footer id="rodape">
     <div class="todos-usuarios">
-      <div class="titulocriadores">
-        <h1>CRIADORES</h1>
-      </div>
-      <div class="usuarios-div" onclick="window.open('https://github.com/rumians')">
-        <div class="nome">Ruan Miguel</div>
-        <img class="foto" src="midia/foto.png" alt="foto de perfil" />
-      </div>
-      <div class="usuarios-div" onclick="window.open('https://github.com/GoodSir6')">
-        <div class="nome">Eduardo</div>
-        <img class="foto" src="midia/foto.png" alt="foto de perfil" />
-      </div>
-      <div class="usuarios-div" onclick="window.open('https://github.com/Henrique0330')">
-        <div class="nome">Henrique Dias</div>
-        <img class="foto" src="midia/foto.png" alt="foto de perfil " />
+      <div>
+        <div class="titulocriadores">
+          <h1>CRIADORES</h1>
+        </div>
+        <ul class="assunto">
+          <li>
+            <div class="usuarios-div" onclick="window.open('https://github.com/rumians')">
+              <img id="imagem2" src="midia/foto.png" alt="lingua e linguagem" />
+              <h2 id="conceitos">Ruan</h2>
+            </div>
+          </li>
+          <li>
+            <div class="usuarios-div" onclick="window.open('https://github.com/goodsir6')">
+              <img id="imagem2" src="midia/foto.png"/>
+              <h2 id="figuras">Eduardo</h2>
+            </div>
+          </li>
+          <li>
+            <div class="usuarios-div" onclick="window.open('https://github.com/rumians')">
+              <img id="imagem2" src="midia/foto.png"/>
+              <h2 id="sin">Henrique</h2>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </footer>
@@ -119,4 +147,5 @@
     </path>
   </svg>
 </body>
+
 </html>

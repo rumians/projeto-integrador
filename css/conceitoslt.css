@@ -31,34 +31,83 @@ html {
     scroll-behavior: smooth;
 }
 
-#menuzin {
-    height: 10vh;
+#nav-bar {
     width: 100%;
-    background-color: #FFC300;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 6rem;
+    position: fixed;
+    transition: 0.5s;
+    z-index: 1;
+  }
+  
+  .nav-list {
     display: flex;
     align-items: center;
+  }
+  
+  .nav-list ul {
+    display: flex;
     justify-content: center;
-}
-
-#menuzin ul {
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  .nav-list ul a {
+    text-decoration: none;
+  }
+  
+  .nav-item {
+    margin: 0 15px;
+  }
+  
+  
+  .mobile-botao {
+    display: none;
+  }
+  
+  .mobile-menu {
+    display: none;
+    text-decoration: none;
+  }
+  
+  .mobile-menu ul li a {
+    text-decoration: none;
+  }
+  
+  .icon {
+    width: 30px;
+  }
+  
+  
+  
+  #nav-bar.rolagem {
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #nav-bar ul {
     display: flex;
     align-items: center;
     justify-content: center;
     list-style-type: none;
-}
-
-#menuzin ul li {
+  }
+  
+  #nav-bar ul li {
     margin: 0 40px;
-}
-
-#menuzin ul li a {
-    color: #000000;
+  }
+  
+  #nav-bar ul li a {
+    color: #fff;
     text-decoration: none;
-}
-
-#menuzin.rolagem a {
-    color: #000000;
-}
+  }
+  
+  #nav-bar.rolagem a {
+    color: #FE775A;
+  }
 
 .h1 {
     text-align: center;
@@ -224,3 +273,101 @@ html {
     height: 60vh;
     border: solid black 3px;
 }
+
+@media screen and (max-width : 800px) {
+    #nav-bar {
+      padding: 1.5rem 4rem;
+      flex-direction: column-reverse;
+    }
+  
+    .mobile-menu ul li{
+      margin-inline-start: 1;
+      margin-top: 30px;
+    }
+  
+    header div ul {
+      position: fixed;
+      background-color: #fff;
+      width: 100%;
+    }
+  
+    #nav-bar.rolagem {
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+      align-content: flex-start;
+  
+    }
+  
+    .nav-item {
+      display: none;
+    }
+  
+    .mobile-menu-icon {
+      display: block;
+    }
+  
+   
+  
+    .mobile-botao {
+      display: block;
+    }
+  
+    .mobile-botao button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  
+    .mobile-menu ul {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-bottom: 1rem;
+    }
+  
+    .mobile-menu ul li a{
+      z-index: 3;
+    }
+  
+    .mobile-menu .nav-item {
+      display: block;
+      padding-top: 1.2rem;
+    }
+  
+    .open {
+      display: block;
+    }
+  
+    #escola {
+      display: none;
+    }
+  
+    #introduçao {
+      margin-right: 10vw;
+    }
+  
+    #imagem1 {
+      display: none;
+    }
+  
+    #parte {
+      display: block;
+    }
+  
+    #texto2 {
+      margin-left: 1vw;
+      margin-right: 1vw;
+      margin-top: 15vh;
+      font-size: 20px;
+    }
+  
+    #titulo2 {
+      font-size: 45px;
+    }
+  
+    #imagem2 {
+      width: 20vw;
+      height: 20vh;
+      border-radius: 50%;
+    }
+  }

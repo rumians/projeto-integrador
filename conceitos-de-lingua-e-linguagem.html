@@ -7,18 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conceitos de lingua e linguagem</title>
     <link rel="icon" href="midia/livros.png" />
+    <script src="menu.js"></script>
     <link rel="stylesheet" href="css/conceitoslt.css">
 </head>
 <body>
-    <header id="cabeçalho">
-        <nav id="menuzin">
+    <header>
+        <nav id="nav-bar">
+          <div class="nav-list">
             <ul>
-                <li><a href="index.html">INICIO</a></li>
-                <li><a href="#referencias">REFERENCIAS</a></li>
-                <li><a href="#mais">MAIS</a></li>
+              <li class="nav-item"><a href="#cabeçalho">INICIO</a></li>
+              <li class="nav-item"><a href="#parte">OBJETIVO</a></li>
+              <li class="nav-item"><a href="#conteudo">ASSUNTOS</a></li>
+              <li class="nav-item"><a href="#rodape">CRIADORES</a></li>
             </ul>
+          </div>
+          <div class="mobile-botao">
+            <button onclick="menulateral()"><img class="icon" src="midia/menu-icon-removebg-preview.png"></button>
+          </div>
         </nav>
-    </header>
+        <div class="mobile-menu">
+          <ul>
+            <li class="nav-item"><a href=""></a></li>
+            <li class="nav-item"><a href="#index.html">INICIO</a></li>
+            <li class="nav-item"><a href="#referencia">REFERENCIAS</a></li>
+            <li class="nav-item"><a href="#mais">MAIS</a></li>
+          </ul>
+        </div>
+      </header>
     <main>
         <div class="conteudo">
             <h1 class="title">Conceitos de Língua e Linguagem</h1>
