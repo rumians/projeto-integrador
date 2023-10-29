@@ -224,3 +224,29 @@ html {
     height: 50vh;
     border: solid black 3px;
 }
+@media screen and (max-width: 800px) {
+    #mais {
+        justify-content: center;
+    }
+
+    #referencias {
+        font-size: 3vw;
+    }
+
+    .title {
+        font-size: 8vw;
+
+    }
+
+    .subtitle {
+        font-size: 5vw;
+    }
+
+    .texto1 {
+        font-size: 15px;
+    }
+
+    .textos {
+        width: 350px;
+    }
+}
