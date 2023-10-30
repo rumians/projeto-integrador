@@ -31,33 +31,78 @@ html {
     scroll-behavior: smooth;
 }
 
-#menuzin {
-    height: 10vh;
+#nav-bar {
     width: 100%;
-    background-color: #FFC300;
     display: flex;
+    justify-content: center;
+    padding: 1.5rem 6rem;
+    position: fixed;
+    transition: 0.5s;
+    top: 0;
+    z-index: 1;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-list ul a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+
+.mobile-botao {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+    text-decoration: none;
+}
+
+.mobile-menu ul li a {
+    text-decoration: none;
+}
+
+#nav-bar.rolagem {
+    width: 100%;
+    display: flex;
+    background-color: #FFC300;
     align-items: center;
     justify-content: center;
 }
 
-#menuzin ul {
+#nav-bar ul {
     display: flex;
     align-items: center;
     justify-content: center;
     list-style-type: none;
 }
 
-#menuzin ul li {
+#nav-bar ul li {
     margin: 0 40px;
 }
 
-#menuzin ul li a {
+#nav-bar ul li a {
     color: #000000;
     text-decoration: none;
 }
 
-#menuzin.rolagem a {
-    color: #000000;
+#nav-bar.rolagem a {
+    color: #FE775A;
 }
 
 .h1 {
@@ -255,5 +300,163 @@ html {
     }
     .title3, .title2{
         font-size: 8vw;
+    }
+
+    #mais {
+        justify-content: center;
+    }
+
+    #referencias {
+        font-size: 3vw;
+    }
+
+    .title {
+        font-size: 8vw;
+
+    }
+
+    .subtitle {
+        font-size: 5vw;
+    }
+
+    .texto1 {
+        font-size: 15px;
+    }
+
+    .textos {
+        width: 350px;
+    }
+
+    #mais {
+        justify-content: center;
+    }
+
+    #referencias {
+        font-size: 3vw;
+    }
+
+    .title {
+        font-size: 8vw;
+        margin-top: 100px;
+    }
+
+    .icon {
+        width: 30px;
+    }
+
+    .subtitle {
+        font-size: 5vw;
+    }
+
+    .texto1 {
+        font-size: 15px;
+    }
+
+    .textos {
+        width: 350px;
+    }
+
+    .title3,
+    .title2 {
+        font-size: 8vw;
+    }
+
+    #mais {
+        justify-content: center;
+    }
+
+    #referencias {
+        font-size: 3vw;
+    }
+
+    .title {
+        font-size: 8vw;
+    }
+
+    .subtitle {
+        font-size: 3vw;
+    }
+
+    .texto1 {
+        font-size: 15px;
+    }
+
+    .imagemconceito1 {
+        width: 300px;
+        height: 300px;
+    }
+
+    .imagem1,
+    .imagem2 {
+        text-align: center;
+    }
+
+    .textos {
+        width: 350px;
+    }
+
+    #nav-bar {
+        padding: 1.5rem 4rem;
+        flex-direction: column-reverse;
+    }
+
+    .mobile-menu ul li {
+        margin-inline-start: 1;
+        margin-top: 30px;
+    }
+
+    header div ul {
+        position: fixed;
+        background-color: #fff;
+        width: 100%;
+    }
+
+    #nav-bar.rolagem {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-content: flex-start;
+
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+
+
+    .mobile-botao {
+        display: block;
+    }
+
+    .mobile-botao button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        background-color: #FFC300;
+    }
+
+    .mobile-menu ul li a {
+        z-index: 3;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .open {
+        display: block;
     }
 }

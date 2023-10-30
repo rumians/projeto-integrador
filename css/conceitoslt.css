@@ -358,38 +358,6 @@ html {
     display: block;
   }
 
-  #escola {
-    display: none;
-  }
-
-  #introduçao {
-    margin-right: 10vw;
-  }
-
-  #imagem1 {
-    display: none;
-  }
-
-  #parte {
-    display: block;
-  }
-
-  #texto2 {
-    margin-left: 1vw;
-    margin-right: 1vw;
-    margin-top: 15vh;
-    font-size: 20px;
-  }
-
-  #titulo2 {
-    font-size: 45px;
-  }
-
-  #imagem2 {
-    width: 20vw;
-    height: 20vh;
-    border-radius: 50%;
-  }
 }
 
 @media (max-width:630px) {
