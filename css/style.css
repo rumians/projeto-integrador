@@ -12,7 +12,7 @@ html {
 }
 
 #cabeçalho {
-  position:sticky;
+  position: sticky;
   height: 100%;
   width: 100%;
   background-image: linear-gradient(to left, rgb(12, 138, 65), #0c60af, #03356bef, #011430, rgb(14, 1, 26));
@@ -421,22 +421,13 @@ li {
   }
 }
 
-@media screen and (max-width : 1220px) {
+@media screen and (max-width : 900px) {
   #conteudo {
-    height: 100%;
+    height: 200%;
   }
 
-}
-
-
-
-@media screen and (max-width : 916px) {
-  #conteudo {
-    height: 110%;
-  }
-
-  #rodape{
-    height: 100%;
+  #rodape {
+    height: 170%;
   }
 }
 
@@ -446,7 +437,11 @@ li {
     flex-direction: column-reverse;
   }
 
-  .mobile-menu ul li{
+  .titulocriadores h1 {
+    font-size: 40px;
+  }
+
+  .mobile-menu ul li {
     margin-inline-start: 1;
     margin-top: 30px;
   }
@@ -472,7 +467,7 @@ li {
     display: block;
   }
 
- 
+
 
   .mobile-botao {
     display: block;
@@ -491,7 +486,7 @@ li {
     padding-bottom: 1rem;
   }
 
-  .mobile-menu ul li a{
+  .mobile-menu ul li a {
     z-index: 3;
   }
 
@@ -538,21 +533,21 @@ li {
   }
 }
 
-@media screen and (max-width : 617px) {
+@media screen and (max-width : 600px) {
   #titulo3 {
     font-size: 45px;
   }
 
   #conteudo {
-    height: 220%;
+    height: 375%;
   }
 
   .titulocriadores h1 {
     font-size: 40px;
   }
 
-  #rodape{
-    height: 150%;
+  #rodape {
+    height: 200%;
   }
 
 }
