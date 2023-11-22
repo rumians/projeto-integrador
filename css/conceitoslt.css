@@ -272,8 +272,9 @@ html {
   #mais{
     justify-content: center;
   }
+
   #referencias{
-    font-size: 3vw;
+    font-size: 4vw;
   }
   .title {
     font-size: 8vw;
@@ -292,7 +293,7 @@ html {
     text-align: center;
   }
   .textos{
-    width: 350px;
+    width: 90vw;
   }
   #nav-bar {
     padding: 1.5rem 4rem;

@@ -295,9 +295,10 @@ html {
         font-size: 15px;
     }
 
-    .textos {
-        width: 350px;
-    }
+    .textos{
+        width: 90vw;
+      }
+
     .title3, .title2{
         font-size: 8vw;
     }
@@ -323,9 +324,9 @@ html {
         font-size: 15px;
     }
 
-    .textos {
-        width: 350px;
-    }
+    .textos{
+        width: 90vw;
+      }
 
     #mais {
         justify-content: center;
@@ -352,9 +353,9 @@ html {
         font-size: 15px;
     }
 
-    .textos {
-        width: 350px;
-    }
+    .textos{
+        width: 90vw;
+      }
 
     .title3,
     .title2 {
@@ -391,9 +392,9 @@ html {
         text-align: center;
     }
 
-    .textos {
-        width: 350px;
-    }
+    .textos{
+        width: 90vw;
+      }
 
     #nav-bar {
         padding: 1.5rem 4rem;

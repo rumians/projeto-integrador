@@ -57,6 +57,7 @@ html {
   justify-content: center;
   list-style: none;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 .nav-list ul a {

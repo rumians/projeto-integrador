@@ -246,7 +246,7 @@ html {
         font-size: 15px;
     }
 
-    .textos {
-        width: 350px;
-    }
+    .textos{
+        width: 90vw;
+      }
 }
