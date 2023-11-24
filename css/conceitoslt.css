@@ -99,7 +99,7 @@ html {
 }
 
 #nav-bar.rolagem a {
-  color: #FE775A;
+  color: #000000;
 }
 
 
@@ -274,7 +274,7 @@ html {
   }
 
   #referencias{
-    font-size: 4vw;
+    font-size: 20px;
   }
   .title {
     font-size: 8vw;
@@ -283,7 +283,7 @@ html {
     font-size: 3vw;
   }
   .texto1{
-    font-size: 15px;
+    font-size: 20px;
   }
   .imagemconceito1{
     width: 300px;

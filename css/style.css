@@ -184,14 +184,14 @@ html {
 }
 
 #conteudo {
-  height: 150%;
+  height: 80%;
   width: 100%;
   background-color: #00095a;
   color: white;
 }
 
 .title3 {
-  height: 10%;
+  height: 20%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -409,25 +409,19 @@ li {
 
 }
 
-@media screen and (max-width : 2065px) {
+@media screen and (max-width : 1500px) {
   #conteudo {
-    height: 60%;
-  }
-}
-
-@media screen and (max-width : 1800px) {
-  #conteudo {
-    height: 80%;
+    height: 170%;
   }
 }
 
 @media screen and (max-width : 900px) {
   #conteudo {
-    height: 200%;
+    height: 255%;
   }
 
   #rodape {
-    height: 170%;
+    height: 180%;
   }
 }
 
@@ -516,14 +510,14 @@ li {
   }
 
   #texto2 {
-    margin-left: 1vw;
-    margin-right: 1vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
     margin-top: 15vh;
-    font-size: 20px;
+    font-size: 17px;
   }
 
   #titulo2 {
-    font-size: 45px;
+    font-size: 40px;
   }
 
   #imagem2 {
@@ -533,13 +527,13 @@ li {
   }
 }
 
-@media screen and (max-width : 600px) {
+@media screen and (max-width : 599px) {
   #titulo3 {
     font-size: 45px;
   }
 
   #conteudo {
-    height: 375%;
+    height: 520%;
   }
 
   .titulocriadores h1 {
@@ -547,7 +541,7 @@ li {
   }
 
   #rodape {
-    height: 200%;
+    height: 250%;
   }
 
 }
@@ -569,6 +563,10 @@ li {
 @media screen and (max-width : 317px) {
   .usuarios-div {
     width: 200px;
+  }
+
+  #introduçao {
+    font-size: 18px;
   }
 
   #sambaqui {
