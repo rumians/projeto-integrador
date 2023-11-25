@@ -8,7 +8,6 @@
     margin: 0%;
     font-family: 'Quicksand', sans-serif;
     color: #000000;
-    font-size: 20px;
 }
 
 
@@ -102,7 +101,7 @@ html {
 }
 
 #nav-bar.rolagem a {
-    color: #FE775A;
+    color: #000000;
 }
 
 
@@ -158,6 +157,14 @@ html {
 .texto1 {
     margin-top: 20px;
     margin-bottom: 20px;
+    font-size: 20px;
+}
+
+#title6 {
+    font-size: 40px;
+    margin-bottom: 5px;
+    margin-top: 100px;
+    text-align: center;
 }
 
 .title2 {
@@ -267,13 +274,14 @@ html {
 
     }
 
+    .title6 {
+        font-size: 40px;
+    }
+
     .subtitle {
         font-size: 5vw;
     }
 
-    .texto1 {
-        font-size: 15px;
-    }
 
     .textos{
         width: 90vw;
@@ -295,10 +303,6 @@ html {
 
     .subtitle {
         font-size: 5vw;
-    }
-
-    .texto1 {
-        font-size: 15px;
     }
 
     .textos{
@@ -324,10 +328,6 @@ html {
 
     .subtitle {
         font-size: 5vw;
-    }
-
-    .texto1 {
-        font-size: 15px;
     }
 
     .textos{
@@ -357,7 +357,7 @@ html {
     }
 
     .texto1 {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .imagemconceito1 {

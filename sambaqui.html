@@ -5,33 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sambaqui</title>
-    <link rel="icon" href="midia/livros.png" />
+    <link rel="icon" href="midia/livros.png"/>
+    <script src="menu.js"></script>
     <link rel="stylesheet" href="css/sambaquistl.css">
 </head>
 
 <body>
     <header id="cabeçalho">
-        <nav id="menuzin">
-            <ul>
-                <li><a href="index.html">INICIO</a></li>
-                <li><a href="#referencias">REFERENCIAS</a></li>
-                <li><a href="#mais">MAIS</a></li>
-            </ul>
+        <nav id="nav-bar">
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html">INICIO</a></li>
+                    <li class="nav-item"><a href="#title6">REFERENCIAS</a></li>
+                    <li class="nav-item"><a href="#mais">MAIS</a></li>
+                </ul>
+            </div>
+            <div class="mobile-botao">
+                <button onclick="menulateral()"><img class="icon" src="midia/menu-icon-removebg-preview.png"></button>
+            </div>
         </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href=""></a></li>
+                <li class="nav-item"><a href="index.html">INICIO</a></li>
+                <li class="nav-item"><a href="#title6">REFERENCIAS</a></li>
+                <li class="nav-item"><a href="#mais">MAIS</a></li>
+            </ul>
+        </div>
     </header>
     <main>
         <div class="conteudo">
             <h1 class="title">Sambaqui</h1>
             <div class="textos">
 
-                <h3 class="subtitle">O que é Sambaqui ?</h3>
+                <h3 class="texto1">O que é Sambaqui ?</h3>
 
                 <p class="texto1">Os sambaquis são amontoados principalmente de conchas , terra e areia, mas também
                     podendo conter ferramentas, adornos ,ossos de humanos ou animais. Não existe uma teoria certa para
                     função dos sambaquis, porém as mais conhecidas seria o sepultamento de humanos e animais ou
                     acampamentos temporários <a href="#referencias">(PACIEVITCH, s. d.)</a></p>
 
-                <h3 class="subtitle">Localização dos Sambaquis em nossa região :</h3>
+                <h3 class="texto1">Localização dos Sambaquis em nossa região :</h3>
 
                 <p class="texto1">figura 1 - Mapa dos sambaquis na nossa região</p>
 
@@ -39,7 +53,7 @@
 
                 <p class="texto1">Fonte: Oliveira e Horn Filho, 2001</p>
 
-                <h3 class="subtitle">O povo que vivia no Sambaqui era da espécie Homo Sapiens?</h3>
+                <h3 class="texto1">O povo que vivia no Sambaqui era da espécie Homo Sapiens?</h3>
 
                 <p class="texto1">Sim, as referências arqueológicas atuais afirmam que os povos que viviam nos sambaquis
                     eram homo sapiens. <a href="#referencias">(SOUSA,2014a)</a><br>
@@ -47,7 +61,7 @@
                     nos sambaquis eram os homo sapiens. <a href="#referencias">(AGUIAR,2019)</a>
                 </p>
 
-                <h3 class="subtitle">Como esse povo chegou até a América? E, pelos elementos que existem
+                <h3 class="texto1">Como esse povo chegou até a América? E, pelos elementos que existem
                     na arqueologia, quando habitaram a região da Baía da Babitonga?</h3>
 
                 <p class="texto1">Existem diversas teorias que tentam explicar a chegada dos homo sapiens na América,
@@ -61,7 +75,7 @@
 
                 ....
 
-                <h3 class="subtitle"> Qual era a principal fonte de alimentação deles? </h3>
+                <h3 class="texto1"> Qual era a principal fonte de alimentação deles? </h3>
 
                 <p class="texto1">A principal fonte de alimentação deles eram os "Frutos Do Mar". Entre eles eram
                     peixes, moluscos como caracóis, ostras e mexilhões, mas eles também se alimentavam de frutos
@@ -69,12 +83,12 @@
                     antas, gambás e tartarugas. <a href="#referencias">(AGUIAR,2016)</a>
                 </p>
 
-                <h3 class="subtitle">Como se sabe essas informações?</h3>
+                <h3 class="texto1">Como se sabe essas informações?</h3>
 
                 <p class="texto1">Essas informações foram encontradas através de restos de peixes e os outros alimentos
                     próximos a ossadas humanas e também, em sambaquis <a href="#referencias">(AGUIAR, s.d.)</a>.</p>
 
-                <h3 class="subtitle">O que é um zoólito: Explique e apresente alguma foto que contenha um exemplo de um
+                <h3 class="texto1">O que é um zoólito: Explique e apresente alguma foto que contenha um exemplo de um
                     deles.</h3>
 
                 <p class="texto1">Zoo significa animal e lito pedra .Então os zoólitos são animais esculpidos em pedra
@@ -85,7 +99,7 @@
 
                 <img class="imagemsambaqui2" src="midia/zoolito.jpeg">
 
-                <h3 class="subtitle">Todo sambaqui contém sepultamentos?</h3>
+                <h3 class="texto1">Todo sambaqui contém sepultamentos?</h3>
 
                 <p class="texto1">Nem todos os sambaquis contêm sepultamentos, mas a maioria deles apresenta algum tipo
                     de vestígio de atividade humana, como a presença de artefatos e restos alimentares.</p>
@@ -94,7 +108,7 @@
                     que os construíram, e, nesses casos, é comum encontrar evidências de sepultamentos humanos.
                     <a href="#referencias">(SOUSA,2014b)</a></p>
 
-                <h3 class="subtitle">Existem outras partes do Brasil e do Mundo que contenham construções
+                <h3 class="texto1">Existem outras partes do Brasil e do Mundo que contenham construções
                     humanas parecidas com as dos Sambaquis da região da Baía da
                     Babitonga?
                 </h3>
@@ -107,14 +121,14 @@
                     Estados Unidos, no Peru e no Chile. passado, o estudo dos sambaquis remonta à ascensão e
                     deslocamento dos humanos nas Américas.<a href="#referencias">(AGUIAR,2023b)</a></p>
 
-                <h3 class="subtitle">Todos os sambaquis encontrados estão intactos ou alguns já foram
+                <h3 class="texto1">Todos os sambaquis encontrados estão intactos ou alguns já foram
                     destruídos? Como isso aconteceu?
                 </h3>
 
                 <p class="texto1">"Alguns sambaquis foram destruídos pela exploração inconsequente das
                     pessoas".<a href="#referencias">(Forumeja, s. d.)</a></p>
 
-                <h3 class="subtitle">Qual a importância de preservar os sambaquis?
+                <h3 class="texto1">Qual a importância de preservar os sambaquis?
                 </h3>
 
                 <p class="texto1">A importância de preservar os sambaquis é que são praticamente a única fonte de
@@ -122,7 +136,7 @@
                     relacionavam com o meio ambiente, os Sambaquis são montes que guardam vestígios arqueológicos
                     deixados pelo Homem da Pré-História. <a href="#referencias">(TV brasil, 2023)</a></p>
 
-                <h3 class="subtitle">REFERENCIAS</h3>
+                <h3 id="title6">REFERENCIAS</h3>
 
                 <p id="referencias">Pacievitch, Thais “Sambaquis”; Info Escola. Disponível em :
                     https://www.infoescola.com/arqueologia/sambaqui/. Acesso em: 16 abr. 2023.

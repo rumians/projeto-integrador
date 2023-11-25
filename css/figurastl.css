@@ -102,7 +102,7 @@ html {
 }
 
 #nav-bar.rolagem a {
-    color: #FE775A;
+    color: #000000;
 }
 
 .h1 {
@@ -132,13 +132,20 @@ html {
     margin-left: 20%;
 }
 
-.title {
+.title6 {
     font-size: 5vw;
     margin-bottom: 5px;
     margin-top: 100px;
     text-align: center;
     text-align: center;
 }
+
+#title4 {
+    font-size: 35px;
+    margin-top: 100px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
 
 
 .autor {
@@ -273,9 +280,8 @@ html {
         font-size: 3vw;
     }
 
-    .title {
-        font-size: 8vw;
-        
+    .title2 {
+        font-size: 40px;
     }
 
     .icon {
@@ -287,16 +293,15 @@ html {
     }
 
     .texto1 {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .textos{
         width: 90vw;
       }
 
-    .title3,
-    .title2 {
-        font-size: 8vw;
+    .title3{
+        font-size: 30px;
     }
 
     #mais {
@@ -304,7 +309,7 @@ html {
     }
 
     #referencias {
-        font-size: 3vw;
+        font-size: 15px;
     }
 
     .title {

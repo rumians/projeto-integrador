@@ -96,13 +96,14 @@ html {
     margin: 0 40px;
 }
 
+
 #nav-bar ul li a {
     color: #000000;
     text-decoration: none;
 }
 
 #nav-bar.rolagem a {
-    color: #FE775A;
+    color: #000000;
 }
 
 .h1 {
@@ -134,11 +135,17 @@ html {
 
 .title {
     font-size: 5vw;
+    margin-top: 60px;
     margin-bottom: 5px;
-    text-align: center;
     text-align: center;
 }
 
+#title6 {
+    font-size: 40px;
+    margin-bottom: 5px;
+    margin-top: 100px;
+    text-align: center;
+}
 
 .autor {
     margin-bottom: 10px;
@@ -278,10 +285,6 @@ html {
         justify-content: center;
     }
 
-    #referencias {
-        font-size: 3vw;
-    }
-
     .title {
         font-size: 8vw;
 
@@ -289,10 +292,6 @@ html {
 
     .subtitle {
         font-size: 5vw;
-    }
-
-    .texto1 {
-        font-size: 15px;
     }
 
     .textos{
@@ -307,10 +306,6 @@ html {
         justify-content: center;
     }
 
-    #referencias {
-        font-size: 3vw;
-    }
-
     .title {
         font-size: 8vw;
 
@@ -321,7 +316,7 @@ html {
     }
 
     .texto1 {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .textos{
@@ -330,10 +325,6 @@ html {
 
     #mais {
         justify-content: center;
-    }
-
-    #referencias {
-        font-size: 3vw;
     }
 
     .title {
@@ -347,10 +338,6 @@ html {
 
     .subtitle {
         font-size: 5vw;
-    }
-
-    .texto1 {
-        font-size: 15px;
     }
 
     .textos{
@@ -367,7 +354,7 @@ html {
     }
 
     #referencias {
-        font-size: 3vw;
+        font-size: 15px;
     }
 
     .title {
@@ -378,9 +365,6 @@ html {
         font-size: 3vw;
     }
 
-    .texto1 {
-        font-size: 15px;
-    }
 
     .imagemconceito1 {
         width: 300px;

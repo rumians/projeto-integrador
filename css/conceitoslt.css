@@ -137,6 +137,13 @@ html {
   text-align: center;
 }
 
+#title4 {
+  font-size: 5vw;
+  margin-top: 100px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
 
 .autor {
   margin-bottom: 10px;

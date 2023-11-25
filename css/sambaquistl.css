@@ -8,7 +8,6 @@
     margin: 0%;
     font-family: 'Quicksand', sans-serif;
     color: #000000;
-    font-size: 20px;
 }
 
 
@@ -31,36 +30,90 @@ html {
     scroll-behavior: smooth;
 }
 
-#menuzin {
-    height: 10vh;
+#nav-bar {
     width: 100%;
-    background-color: #FFC300;
     display: flex;
+    justify-content: center;
+    padding: 1.5rem 6rem;
+    position: fixed;
+    transition: 0.5s;
+    top: 0;
+    z-index: 1;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-list ul a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+
+.mobile-botao {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+    text-decoration: none;
+}
+
+.mobile-menu ul li a {
+    text-decoration: none;
+}
+
+
+
+#nav-bar.rolagem {
+    width: 100%;
+    display: flex;
+    background-color: #FFC300;
     align-items: center;
     justify-content: center;
 }
 
-#menuzin ul {
+#nav-bar ul {
     display: flex;
     align-items: center;
     justify-content: center;
     list-style-type: none;
 }
 
-#menuzin ul li {
+#nav-bar ul li {
     margin: 0 40px;
 }
 
-#menuzin ul li a {
+#nav-bar ul li a {
     color: #000000;
     text-decoration: none;
 }
 
-#menuzin.rolagem a {
+#nav-bar.rolagem a {
     color: #000000;
 }
 
 .h1 {
+    text-align: center;
+}
+
+#title6 {
+    font-size: 40px;
+    margin-bottom: 5px;
+    margin-top: 100px;
     text-align: center;
 }
 
@@ -77,6 +130,10 @@ html {
     font-size: 125%;
 }
 
+.icon {
+    width: 30px;
+}
+
 .conteudo {
     display: flex;
     flex-wrap: wrap;
@@ -89,6 +146,7 @@ html {
 
 .title {
     font-size: 5vw;
+    margin-top: 50px;
     margin-bottom: 5px;
     text-align: center;
     text-align: center;
@@ -156,7 +214,7 @@ html {
     margin-right: 15px;
 }
 
-#mais  {
+#mais {
     display: flex;
     flex-wrap: wrap;
     margin-left: 20%;
@@ -164,19 +222,19 @@ html {
     margin-top: 20px;
 }
 
-#mais >div {
+#mais>div {
     flex: 1 1 400px;
     margin-top: 15px;
     margin-bottom: 10px;
 }
 
-#mais  h1 {
+#mais h1 {
     font-family: 'Cabin', sans-serif;
     font-size: 20px;
     margin-top: 10px;
 }
 
-#mais  a {
+#mais a {
     text-decoration: none;
 }
 
@@ -188,7 +246,7 @@ html {
     box-shadow: 2px 2px 3px var(--cor-terciaria);
 }
 
-#mais  p {
+#mais p {
     font-family: 'Quicksand', sans-serif;
     max-width: 360px;
 }
@@ -224,13 +282,14 @@ html {
     height: 50vh;
     border: solid black 3px;
 }
+
 @media screen and (max-width: 800px) {
     #mais {
         justify-content: center;
     }
 
     #referencias {
-        font-size: 3vw;
+        font-size: 15px;
     }
 
     .title {
@@ -243,10 +302,75 @@ html {
     }
 
     .texto1 {
-        font-size: 15px;
+        font-size: 20px;
     }
 
-    .textos{
+    .textos {
         width: 90vw;
-      }
+    }
+
+    #nav-bar {
+        padding: 1.5rem 4rem;
+        flex-direction: column-reverse;
+    }
+
+    .mobile-menu ul li {
+        margin-inline-start: 1;
+        margin-top: 30px;
+    }
+
+    header div ul {
+        position: fixed;
+        background-color: #fff;
+        width: 100%;
+    }
+
+    #nav-bar.rolagem {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-content: flex-start;
+
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+
+
+    .mobile-botao {
+        display: block;
+    }
+
+    .mobile-botao button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        background-color: #FFC300;
+    }
+
+    .mobile-menu ul li a {
+        z-index: 3;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .open {
+        display: block;
+    }
 }
